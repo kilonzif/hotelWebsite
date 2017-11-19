@@ -1,0 +1,289 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Contact| Akofena</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="mainCS.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/css/star-rating.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.2/js/star-rating.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body background-color:#eeeddd>
+
+	    <nav class="navbar navbar-default navbar-fixed-top"  class="navbar navbar-light" style="background-color: #292f38;">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="index.html"><img src="images/akofena.jpg" id="logoImg" style="display:inline;color:white"  >Akofena International Hotel</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="index.html">Home</a></li>
+	        <li><a href="bookRoom.html">Make a Booking</a></li>
+	        <li><a href="gallery.html">Gallery</a></li>
+	        <li><a href="contact.html"  class="active">Contact us</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+		<hr>
+	      <section id="contact">
+				<div class="section-content">
+					<h1 class="section-header" style="font-family:'Satisfy', cursive;">Get in Touch with us</h1>
+				</div>
+				<div class="contact-section">
+				<div class="container">
+					<form name="contactForm" action="" method="">
+						<div class="col-md-6 form-line">
+				  			<div class="form-group">
+				  				<label for="exampleInputUsername">Your name</label>
+						    	<input type="text" name ="contactName" class="form-control" id="contactName" placeholder=" Enter Name" required>
+					  		</div>
+					  		<div class="form-group">
+						    	<label for="exampleInputEmail">Email Address</label>
+						    	<input type="email" class="form-control" id="contactEmail" placeholder=" Enter Email id" required>
+						  	</div>	
+						  	<div class="form-group">
+						    	<label for="telephone">Mobile No.</label>
+						    	<input type="tel" class="form-control" id="contactPhone" placeholder=" Enter 10-digit mobile no." required maxlength="10">
+				  			</div>
+				  			<div class="form-group">
+				  				<label for ="description"> Message</label>
+				  			 	<textarea  class="form-control" id="contactMsg" placeholder="Enter Your Message" required></textarea>
+				  			</div>
+				  			<div>
+
+				  				<button type="button" class="btn btn-default submit" onclick="contactUs()"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+				  			</div>
+				  		</div>
+				  		</form>
+
+				  		<div class="col-md-6">
+						  	<div class="col-sm-4">		          
+						        <p style="color:#fff"><span class="glyphicon glyphicon-map-marker"></span><strong>OUR LOCATION</strong></p>
+						        <p>Tamale, Ghana</p>
+						        <p>Akofena Int. Hotel,</p>
+						        <p>Off Jubilee Park,</p>
+			        		</div>
+				  			<div class="col-sm-4">
+	 							<p style="color:#fff"><strong>CONTACT US</i></strong></p>
+					            <p><span class="glyphicon glyphicon-phone"></span>
+					              Resort (0727 880 488, 0736 880 488)</p>
+					            <p>Head Office (0780 880 488, 0736 535 422)</p>
+					            <p><span class="glyphicon glyphicon-envelope"></span>reservations@akofenaIntHotel.com</p>
+					            <p>info@akofenaIntHotel.com</p>
+				  			</div>
+				  			 <div class="col-sm-4">         
+						          <h4>Follow us on Social media</h4>
+						          <a href="#" class="fa fa-facebook"></a>
+						          <a href="#" class="fa fa-twitter"></a>
+						          <a href="#" class="fa fa-youtube"></a>
+						          <a href="#" class="fa fa-instagram"></a>       
+	        				</div>
+	        				<div class="col-sm-12"> 
+		        				<h2>Subscribe to our Newsletter</h2>
+								<div class="input-group">
+							         <input type="email" id="subscribeEmail" name="subscribeEmail" class="form-control" placeholder="Enter your email">
+							         <span class="input-group-btn">
+							         <button class="btn btn-theme" type="submit" style="border-radius: 0 20px 20px 0;background: #243c4f;color: #fff;" onclick="subscribe()">Subscribe</button>
+							         </span>
+							    </div>
+				    		</div>
+				  			
+						</div>
+					</div>
+
+					
+
+				</div>
+			</section>	
+			<hr>
+			 <div id="feedback">
+			    <p align="center" style="font-size:36px; font-family: 'Satisfy', cursive; color:#eff5f5;"> Please Rate our Services
+			          <i class="fa fa-pencil" aria-hidden="true"></i>
+			        </p>
+				       <div class="container">
+						  <div class="row">
+						    <div class="col-lg-12">
+                                 <form>
+    <label class="radio-inline" id="choose" style="color:white">
+      <input type="radio" name="optradio">1 (Terrible)
+    </label>
+    <label class="radio-inline" id="choose" style="color:white">
+      <input type="radio" name="optradio">2 (Poor)
+    </label>
+    <label class="radio-inline" id="choose" style="color:white">
+      <input type="radio" name="optradio">3 (Good)
+    </label>
+    <label class="radio-inline" id="choose" style="color:white">
+      <input type="radio" name="optradio">3 ( Very Good)
+    </label>
+    <label class="radio-inline" id="choose" style="color:white">
+      <input type="radio" name="optradio" >3 (Excellent)
+    </label>
+  </form>
+
+	     <div class="star-rating" id="Starchoose">
+	        <span class="fa fa-star-o" data-rating="1"></span>
+	        <span class="fa fa-star-o" data-rating="2"></span>
+	        <span class="fa fa-star-o" data-rating="3"></span>
+	        <span class="fa fa-star-o" data-rating="4"></span>
+	        <span class="fa fa-star-o" data-rating="5"></span>
+	        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+	    </div>
+	</div>
+</div>
+	<center><p id="description">
+		<textarea  class="form-control" id="textArea" placeholder="Enter Your Rating Message" style="width:50%;display:inline;"></textarea></p>
+   		<p><button type="button" class="btn btn-default" onclick="submitRate()" style="display:inline;color:white; background-color:#000000"><i class="fa fa-paper-plane" aria-hidden="true"></i> Rate Akofena</button></p></center>
+    </div>
+      <p style="color:white;"><marquee> Thank you for visiting Akofena International Hotel, Welcome Again! </marquee><p>
+	</div>
+	<center>
+	<img src="images/partitionImg.png"  height="50px">
+	<h4 style="font-family: 'Satisfy', cursive; color:green;font-size:28px;">Google Maps Directions</h4>
+	</center>
+	<div id="map">
+			
+	</div>
+		<hr>
+		<footer >
+	    <div class="row text-center" class="foota">
+	        <div class="col-sm-4">
+	         
+	          <h4>Follow us on Social media</h4>
+	          <a href="#" class="fa fa-facebook"></a>
+	          <a href="#" class="fa fa-twitter"></a>
+	          <a href="#" class="fa fa-youtube"></a>
+	          <a href="#" class="fa fa-instagram"></a>
+	          <p>Copyright 2017.Akofena International.</p>
+	          <p> All Rights Reserved </p>
+	          <p>Website & Photography By: <a href="faithkilonzi.wordpress.com">
+	           Kilonzi Group Ltd</a></p>
+	          
+	        </div>
+	        <div class="col-sm-4">
+	          
+	        <p style="color:#fffddd"><span class="glyphicon glyphicon-map-marker"></span><strong>      OUR LOCATION</strong></p>
+	        <p>Tamale, Ghana</p>
+	        <p>Akofena Int. Hotel,</p>
+	        <p>Off Jubilee Park,</p>
+	  
+	        </div>
+	        <div class="col-sm-4">
+	      
+	            <p style="color:#fffddd"><strong>  CONTACT US</i></strong></p>
+	            <p>
+	              <span class="glyphicon glyphicon-phone"></span>
+	              Resort (0727 880 488, 0736 880 488)</p>
+	            <p>Head Office (0780 880 488, 0736 535 422)</p>
+	            <p><span class="glyphicon glyphicon-envelope"></span>reservations@akofenaIntHotel.com</p>
+	            <p>info@akofenaIntHotel.com</p>
+	            
+	       
+	        </div>
+	      </div>
+	</div>
+	</footer> 
+
+	 <script>
+		      function initMap() {
+		        var akofena = {lat:  5.551370, lng: -0.170681};
+
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 18,
+		          center: akofena
+		        });
+		        var marker = new google.maps.Marker({
+		          position: akofena,
+		          map: map
+		        });
+		      }
+
+		      $(document).ready(function() {
+				  $("#btnAdd").click(function() {
+				    $("#a").append('<div class="con"><input type="text" id="Text1" value="" />' + '<input type="button" class="btnRemove" value="Remove"/></div>');
+				  });
+				  $('body').on('click','.btnRemove',function() {
+				    $(this).parent('div.con').remove()
+
+				  });
+				});
+
+		      
+		      //stars
+		      var $star_rating = $('.star-rating .fa');
+
+	var SetRatingStar = function() {
+	  return $star_rating.each(function() {
+	    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+	      return $(this).removeClass('fa-star-o').addClass('fa-star');
+	    } else {
+	      return $(this).removeClass('fa-star').addClass('fa-star-o');
+	    }
+	  });
+	};
+
+	$star_rating.on('click', function() {
+	  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+	  return SetRatingStar();
+	});
+
+	SetRatingStar();
+	$(document).ready(function() {
+
+	});
+	//submit rating
+	function submitRate(){
+		var rateValue = document.getElementById("textArea").value;
+		var radioChoose=document.getElementById("choose").checked;
+		alert("Feedback recorded! Thanks");
+		document.getElementById("textArea").value = " ";
+
+	  	for (var i=0;i<radioChoose.length;i++)
+	  		radioChoose[i].checked=false;
+	}
+
+	//submit contact
+
+	function ClearFields() {
+
+     document.getElementById("contactName").value = "";
+     document.getElementById("contactEmail").value = "";
+     document.getElementById("contactPhone").value = "";
+     document.getElementById("contactMsg").value = "";
+}
+
+	function contactUs(){
+		alert("Thanks for reaching out to us. We'll get back to you soon.");
+		ClearFields();
+	}
+	function subscribe(){
+		alert("Thanks for subscribing. Be on the look out for our materials");
+		document.getElementById('subscribeEmail').value='';
+	}
+
+
+
+
+
+	    </script>
+	    <script async defer
+	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDAhk3eqJHJMjVfStIvNdDZe06sWAR7Fc&callback=initMap">
+
+	    </script>
+
+
+	</body>
+	</html>
